@@ -47,7 +47,7 @@ static int namesCount = 50;
     NSDate* randomBirthday = [NSDate dateWithYear:(arc4random_uniform(5) + 1985) month:(arc4random_uniform(12)) day:(arc4random_uniform(30))];
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"MM/dd/yyyy"];
+    [dateFormatter setDateFormat:@"MMM/dd/yyyy"];
     
     NSString* date = [NSString stringWithFormat:@"%@",[dateFormatter stringFromDate:randomBirthday]];
     
